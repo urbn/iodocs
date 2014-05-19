@@ -7,3 +7,6 @@ pids/*
 # Ignore project files
 .idea/*
 *.iml
+
+# Ignore redis files
+*.rdb

@@ -1,0 +1,47 @@
+{
+  "endpoints": [
+    {
+      "name": "Product",
+      "methods": [
+        {
+          "MethodName": "Get",
+          "Synopsis": "Get product details for the specified product id.<p>
+          For detail explanation of each property, type and format; refer to <a href='https://urbnit.atlassian.net/wiki/display/AMA/Product+Detail+Service+Data+Breakdown'>response details</a>",
+          "HTTPMethod": "GET",
+          "URI": "/v0/product/:id",
+          "RequiresOAuth": "N",
+          "parameters": [
+            {
+              "Default": "24525032",
+              "Required": "Y",
+              "Type": "string",
+              "Name": "id",
+              "Description": "product id"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Category",
+      "methods": [
+        {
+          "MethodName": "Get",
+          "Synopsis": "Get category details, associated products, all ancestors and childred for the specified category id.",
+          "HTTPMethod": "GET",
+          "URI": "/v0/category/:id",
+          "RequiresOAuth": "N",
+          "parameters": [
+            {
+              "Default": "MENS_SHOES",
+              "Required": "Y",
+              "Type": "string",
+              "Name": "id",
+              "Description": "category id"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
