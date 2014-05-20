@@ -18,6 +18,62 @@
               "Description": "product detail"
             }
           ]
+        },
+        {
+          "MethodName": "Post",
+          "Synopsis": "Create new Registry",
+          "HTTPMethod": "POST",
+          "URI": "/registry",
+          "RequiresOAuth": "N",
+          "content": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "Name": "object type",
+              "Required": "Y",
+              "Type": "object",
+              "Description": "JSON Object",
+              "parameters" : [
+                {
+                  "Name": "Pre Event Shipping Address",
+                  "Required": "Y",
+                  "Type": "object",
+                  "Description": "Pre event shipping address",
+                  "parameters": [
+                    {
+                      "Name": "address1",
+                      "Required": "Y",
+                      "Type": "string",
+                      "Description": "Shipping Address",
+                      "Default": "5000 South Broad Street"
+                    },
+                    {
+                      "Name": "state",
+                      "Required": "Y",
+                      "Type": "string",
+                      "Description": "State",
+                      "Default": "PA"
+                    },
+                    {
+                      "Name": "city",
+                      "Required": "Y",
+                      "Type": "string",
+                      "Description": "City",
+                      "Default": "Philadelphia"
+                    },
+                    {
+                      "Name": "Zip Code",
+                      "Requred": "Y",
+                      "Type": "string",
+                      "Description": "Zip Code",
+                      "Default": "19121"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     }
