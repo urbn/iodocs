@@ -18,5 +18,16 @@
         "headers": {
             "Accept": "application/json"
         }
+    },
+    "urbn_registry_v1": {
+        "name": "URBN Registr v1 API",
+        "protocol": "http",
+        "baseURL": "andev2.urbanout.com",
+        "publicPath": "/api/latest",
+        "keyParam": "",
+        "headers": {
+            "Accept": "application/json"
+        }
     }
+
 }
